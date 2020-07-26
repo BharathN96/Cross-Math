@@ -1,1 +1,51 @@
 # Cross-Math
+Cross Math is a python script which gives a solution for a [cross math puzzle](https://www.pleacher.com/mp/puzzles/mathpuz/mobcm39.html)
+
+## Pre-Requisite
+[Python](https://www.python.org/) version 3.7+
+
+## Input instructions
+Input will be row and column wise operators and its value.
+For Example
+```bash
+ a   *   b   /   c   =  r1 
+ +       +       - 
+ p   +   q   +   r   =  r2 
+ -       -       + 
+ x   *   y   +   z   =  r3 
+ =       =       = 
+c1      c2      c3 
+```
+Row 1 input will be: (operator1 operator2 value_of_the_row)
+```bash
+* / r1
+```
+Column 1 input will be: (operator1 operator2 value_of_the_column)
+```bash
++ - c1
+```
+
+## Output
+Program out will be solution for the cross math puzzle
+
+## Sample input and output
+Input:
+```bash
+Enter the Row 1 data: * / 12
+Enter the Row 2 data: + + 15
+Enter the Row 3 data: * + 16
+Enter the Column 1 data: + - 1
+Enter the Column 2 data: + - 13
+Enter the Column 3 data: - + 7
+```
+Output:
+```bash
+Solution for your cross math is:
+ 3   *   8   /   2   =  12 
+ +       +       - 
+ 5   +   6   +   4   =  15 
+ -       -       + 
+ 7   *   1   /   9   =  16 
+ =       =       = 
+ 1      13       7 
+ ```
